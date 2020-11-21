@@ -16,11 +16,11 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
-  siteName: 'Hackalong Boilerplate',
+  siteName: 'LunarPunk Labs',
   siteDescription: "Lorem ipsum",
-  siteUrl: "http://hackalong.io",
+  siteUrl: "http://lunarpunklabs.org",
   metadata: {
-    repoUrl: "https://github.com/hack-along/gridsome-boilerplate/tree/master",
+    repoUrl: "https://github.com/LunarPunk-Labs/lunarpunksite-v3/tree/master",
 
   },
   templates: {
