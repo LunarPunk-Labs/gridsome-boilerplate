@@ -11,7 +11,12 @@ module.exports = function (api) {
     addSchemaTypes,
     addSchemaResolvers
   }) => {
-
+    addSchemaTypes(`
+    type fileInfo   {
+      id: ID!,
+      path: String,      
+    }
+  `)
     addSchemaTypes(`
     type MdPage implements Node @infer {
       id: ID!,
@@ -28,6 +33,8 @@ module.exports = function (api) {
       start_time: String,
       end_time: String,
       thumbnail: String,
+      path: String,
+      fileInfo: fileInfo
       
     }
   `)
@@ -43,6 +50,12 @@ module.exports = function (api) {
       tags: String,
       extraClassImg: String,
       extraClassHeader: String,  
+    }
+  `)
+    addSchemaTypes(`
+    type Tag implements Node @infer {
+      id: ID!,
+      title: String,      
     }
   `)
     addSchemaResolvers({
