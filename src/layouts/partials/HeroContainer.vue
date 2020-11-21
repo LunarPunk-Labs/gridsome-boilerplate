@@ -1,19 +1,21 @@
 <template>
-  <div class="bg-primary-700 h-screen overflow-hidden">
-    <div class="relative z-10 h-screen px-4 flex justify-center items-center text-white">
-      <slot />
-    </div>
+  <div class="h-screen overflow-hidden">
     <g-image
       v-if="bg"
       :src="setImage"
-      class="w-full h-screen object-cover absolute z-10 top-0 hero-image opacity-50"
+      class="w-full h-screen object-cover absolute z-10 top-0 hero-image opacity-25"
       alt="cell"
     />
+    <div
+      class="relative z-10 h-screen px-4 flex justify-center items-center text-white"
+    >
+      <slot />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .hero-image {
-  mix-blend-mode: luminosity;
+  // mix-blend-mode: luminosity;
 }
 </style>
 
@@ -21,13 +23,13 @@
 export default {
   props: {
     bg: {
-      required: false
-    }
+      required: false,
+    },
   },
   computed: {
-    setImage: function() {
+    setImage: function () {
       return require("@/assets/img/" + this.bg);
-    }
-  }
+    },
+  },
 };
 </script>

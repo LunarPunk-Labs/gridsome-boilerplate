@@ -1,45 +1,82 @@
 <template>
-  <Layout>
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
+  <LayoutHero>
+    <template slot="hero">
+      <hero-container :bg="heroBG">
+        <div  class="text-center">
+          <div>
+              <g-image
+            src="@/assets/img/logo.png"
+            width="300"
+            height="150"
+            alt="logo"
+            fit="outside"
+          />
+          </div>
+          <div>
+            <h3> Systemic solutions</h3>
+          </div>
+        </div>
+      </hero-container>
+    </template>
 
-    <h1>Hello, world!</h1>
-    <div class="flex flex-wrap mt-10">
+    <div class="flex flex-wrap my-10">
       <card v-for="card in cards" v-bind="card" :key="card.title"></card>
     </div>
-    <div class="flex flex-wrap mt-10">
-      <event-container id="events" />
+
+    <div class="bg-white shadow-lg p-10">
+      <h2>Our thesis</h2>
+      <p>
+        According to <a href="https://carbontracker.org/reports/2020-vision-why-you-should-see-the-fossil-fuel-peak-coming/">CarbonTracker.org</a>, the fossil fuel industry is looking at $25tn of fixed assets vunerable to stranding with systemic risks to financial markets as they seek to divest. 
+        Fund managers are resultently looking to balance their risk through ESG investments (Enviromental, Social, Governance). 
+        The true value of these organisations will very likely be unlocked and accelerated by "Self Soverign Identity" and "Web of Trust" technology. 
+      </p>
+
+      <p>
+        In our view distributed Identity will:
+        <ul class="list-disc py-4 px-4">
+          <li> Bring trust back to the internet and become ubiquitous</li>
+          <li> Merge with all things physical (Rivers, Forests, Cars, Devices)</li>
+          <li> Create new forms of wealth via personal and local currencies</li>
+          <li> Create new business models and decimate vendor lock-in by enabling data portability</li>
+          <li> Positivly impact user experience through human centric design</li>
+          <li> Enable a sense of agency and autonomy by requiring user consent</li>
+          <li> Foster the bottom up and build flatter institutions</li>
+          <li><strong> Build a resilient world </strong></li>
+        </ul>
+      </p>
     </div>
-  </Layout>
+  </LayoutHero>
 </template>
-
-
 
 <script>
 export default {
   metaInfo: {
-    title: "Example !",
+    title: "Home",
   },
-
   data() {
     return {
+      heroBG: "bg.jpg",
       cards: [
         {
-          title: "hello world",
-          img: "https://picsum.photos/600/200",
+          title: "Enviromental",
+          // img: "enviromentalmoon.jpg",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis neque, mollitia a magni ducimus aliquam blanditiis animi sequi beatae nisi facilis maiores voluptate doloribus necessitatibus est laborum vel. Quasi, nisi. ",
+            "We design and build biomimetic technology intended to drive the restoration and regeneration of our biosphere from a living systems perspective",
+          link: "../enviromental",
         },
         {
-          title: "this one has a link",
-          img: "https://picsum.photos/600/300",
-          link: "https://vuejs.org/v2/guide/components-props.html",
+          title: "Social",
+          // img: "socialbonfiremoon2.jpg",
           content:
-            "blanditiis animi sequi beatae nisi facilis maiores voluptate doloribus necessitatibus est laborum vel. Quasi, nisi. ",
+            "We're a distributed organisation made from an ecology of peers that come and go. A structured network of solidarity and mutual care",
+          link: "../social",
         },
         {
-          title: "No image here",
+          title: "Governace",
+          // img: "gonvernancemoon.jpg",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis neque, mollitia a magni ducimus aliquam blanditiis animi sequi beatae nisi facilis maiores voluptate doloribus necessitatibus est laborum vel. Quasi, nisi. ",
+            "We're transparent about our activities and are collectivly governed by the internal and external stakeholders involved with our network",
+          link: "../governance",
         },
       ],
     };

@@ -11,7 +11,7 @@
         >
           <g-image
             src="@/assets/img/logo.png"
-            width="50"
+            width="100"
             height="50"
             alt="logo"
             fit="outside"
@@ -45,14 +45,8 @@
         :duration="100"
         bezier-easing-value="0,0,.58,1"
       >
-        <router-link to="/#events" class="nav-link scrollactive-item"
-          >Example section link</router-link
-        >
-        <router-link to="/hero" class="nav-link scrollactive-item"
-          >Example hero</router-link
-        >
         <router-link to="/faq" class="nav-link scrollactive-item"
-          >Example markdown page</router-link
+          >FAQ</router-link
         >
       </scrollactive>
 
