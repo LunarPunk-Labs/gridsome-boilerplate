@@ -187,8 +187,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Nunito Sans',
-        'Roboto',
+        'Open Sans',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
@@ -203,6 +202,7 @@ module.exports = {
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
+        'DM Mono',
         'Menlo',
         'Monaco',
         'Consolas',
@@ -210,6 +210,8 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      display: ['Open Sans', 'sans-serif'],
+      body: ['DM Mono', 'monospace']
     },
     extend: {},
   },
