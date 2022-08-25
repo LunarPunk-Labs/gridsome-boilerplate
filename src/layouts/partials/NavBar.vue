@@ -36,7 +36,6 @@
       <!-- end navigation toggle -->
 
       <!-- Navigation Links-->
-
       <scrollactive
         :class="open ? 'block' : 'hidden'"
         class="w-full sm:flex sm:items-center sm:w-auto flex-grow sm:flex-grow-0"
@@ -45,11 +44,11 @@
         :duration="100"
         bezier-easing-value="0,0,.58,1"
       >
-        <router-link to="/faq" class="nav-link scrollactive-item"
-          >FAQ</router-link
+        <router-link to="/thesis" class="nav-link scrollactive-item"
+          >Thesis</router-link
         >
+        <g-link class="nav-link" to="https://www.tothecosmos.com">BLOG</g-link>
       </scrollactive>
-
       <!-- End navigation Links-->
     </nav>
   </header>

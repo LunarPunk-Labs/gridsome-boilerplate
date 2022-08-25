@@ -7,14 +7,12 @@
   </div>
 </template>
 
-
 <script>
 export default {
   data() {
     return {
-      thankyou: ["all the people"],
+      thankyou: ["Lunar Punks"],
     };
   },
 };
 </script>
-
