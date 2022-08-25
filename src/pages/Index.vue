@@ -22,11 +22,11 @@
     <div class="bg-white shadow-lg p-10">
       <p>
         <h1>
-          Process Design Agency
+          Web3 Process Design Agency
         </h1>
       </p>
       <p>
-        We help web3 refi projects in moving away from uncertainty towards scientifically verifiable outcomes.
+        We help refi projects in moving away from uncertainty towards scientifically verifiable outcomes.
         <!---
         We lead, serve and support creative initiatives by designing
         transformation pathways that move projects from their initial
@@ -64,7 +64,7 @@ export default {
   },
   data() {
     return {
-      heroBG: "CosmicGeometry.png",
+      heroBG: "CosmicGeometry.jpg",
       cards: [
         {
           title: "People",
