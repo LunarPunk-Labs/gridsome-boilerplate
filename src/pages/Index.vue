@@ -3,14 +3,14 @@
     <template slot="hero">
       <hero-container :bg="heroBG">
         <div class="text-center">
-          <div>
+          <div> 
             <g-image
               src="@/assets/img/logo.png"
-              width="300"
-              height="150"
+              width="130"
+              height="65"
               alt="logo"
               fit="outside"
-            />
+            /> 
           </div>
           <div>
             <!--- <h3> Systemic solutions</h3> --->
@@ -20,10 +20,9 @@
     </template>
 
     <div class="bg-white shadow-lg p-10">
-      <!--- <h2>Web3 Agency</h2> --->
       <p>
         <h1>
-          Process Design for Web3
+          Process Design Agency
         </h1>
       </p>
       <p>
@@ -65,13 +64,13 @@ export default {
   },
   data() {
     return {
-      heroBG: "bg.jpg",
+      heroBG: "CosmicGeometry.png",
       cards: [
         {
           title: "People",
           img: "Cards/Three.png",
           content:
-            "Generating collective capacity by holding, convening and shaping spaces.",
+            "Generating collective capacity by shaping, holding and convening spaces.",
           link: "../enviromental",
         },
         {
@@ -82,10 +81,10 @@ export default {
           link: "../governance",
         },
         {
-          title: "Protocols",
+          title: "Process",
           img: "Cards/RoughNine.png",
           content:
-            "Regenerative terraforming through web3 ecosystems by leveraging monitoring, verification and reporting technology.",
+            "Regenerative terraforming through transparent MRV protocols.",
           link: "../social",
         },
       ],

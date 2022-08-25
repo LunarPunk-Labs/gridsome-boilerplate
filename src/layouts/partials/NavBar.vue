@@ -10,7 +10,7 @@
           :title="$static.metadata.siteName"
         >
           <g-image
-            src="@/assets/img/logo.png"
+            src="@/assets/img/logoShort.png"
             width="100"
             height="50"
             alt="logo"
@@ -44,10 +44,13 @@
         :duration="100"
         bezier-easing-value="0,0,.58,1"
       >
-        <router-link to="/thesis" class="nav-link scrollactive-item"
+        <!-- <router-link to="/thesis" class="nav-link scrollactive-item"
           >Thesis</router-link
+        > -->
+        <router-link to="/guides" class="nav-link scrollactive-item"
+          >Guides</router-link
         >
-        <g-link class="nav-link" to="https://www.tothecosmos.com">BLOG</g-link>
+        <g-link class="nav-link" to="https://www.tothecosmos.org">BLOG</g-link>
       </scrollactive>
       <!-- End navigation Links-->
     </nav>

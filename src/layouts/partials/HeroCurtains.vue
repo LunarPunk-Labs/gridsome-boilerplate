@@ -7,13 +7,13 @@
       <div id="canvas"></div>
       <div class="hide-before-load small-plane" id="animated-header">
         <!-- <img src="img/coho_5.png" alt="mandala" data-sampler="planeTexture" /> -->
-        <g-image
+        <!-- <g-image
           v-if="bg"
           :immediate="true"
-          src="~/assets/img/bg.png"
+          src="~/assets/img/CosmicGeometry.png"
           data-sampler="planeTexture"
           class="shade-img"
-        />
+        /> -->
       </div>
     </div>
 
@@ -33,9 +33,23 @@
             <path
               d="M43.264 107.879c-8.096 0-9.964.534-14.462-14.504-4.498-15.038-5.941-13.534-12.238-13.534"
             />
-            <rect width="14.147" height="25.817" x="46.618" y="77.854" rx="7.073" ry="7.152" />
+            <rect
+              width="14.147"
+              height="25.817"
+              x="46.618"
+              y="77.854"
+              rx="7.073"
+              ry="7.152"
+            />
             <circle cx="57.937" cy="102.217" r="2.4" />
-            <rect width="14.147" height="25.817" x="46.618" y="77.854" rx="7.073" ry="7.152" />
+            <rect
+              width="14.147"
+              height="25.817"
+              x="46.618"
+              y="77.854"
+              rx="7.073"
+              ry="7.152"
+            />
             <path
               d="M79.445 77.349v19.558c0 5.402-6.153 6.93-9.87 6.93-3.718 0-3.55-2.33-3.55-6.51V77.348"
             />
@@ -46,7 +60,10 @@
             />
             <circle cx="86.658" cy="71.917" r="1.764" />
             <circle cx="38.718" cy="90.445" r="1.764" />
-            <path stroke-linecap="butt" d="M18.007 101.094h-141.756M16.564 79.841h-140.199" />
+            <path
+              stroke-linecap="butt"
+              d="M18.007 101.094h-141.756M16.564 79.841h-140.199"
+            />
           </a>
           <a transform="rotate(180 -10.876 123.426)">
             <path
@@ -55,9 +72,23 @@
             <path
               d="M43.264 107.879c-8.096 0-9.964.534-14.462-14.504-4.498-15.038-5.941-13.534-12.238-13.534"
             />
-            <rect width="14.147" height="25.817" x="46.618" y="77.854" rx="7.073" ry="7.152" />
+            <rect
+              width="14.147"
+              height="25.817"
+              x="46.618"
+              y="77.854"
+              rx="7.073"
+              ry="7.152"
+            />
             <circle cx="57.937" cy="102.217" r="2.4" />
-            <rect width="14.147" height="25.817" x="46.618" y="77.854" rx="7.073" ry="7.152" />
+            <rect
+              width="14.147"
+              height="25.817"
+              x="46.618"
+              y="77.854"
+              rx="7.073"
+              ry="7.152"
+            />
             <path
               d="M79.445 77.349v19.558c0 5.402-6.153 6.93-9.87 6.93-3.718 0-3.55-2.33-3.55-6.51V77.348"
             />
@@ -68,7 +99,10 @@
             />
             <circle cx="86.658" cy="71.917" r="1.764" />
             <circle cx="38.718" cy="90.445" r="1.764" />
-            <path stroke-linecap="butt" d="M18.007 101.094h-141.756M16.564 79.841h-140.199" />
+            <path
+              stroke-linecap="butt"
+              d="M18.007 101.094h-141.756M16.564 79.841h-140.199"
+            />
           </a>
         </g>
       </svg>
@@ -100,10 +134,10 @@ export default {
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "easeInCubic",
       duration: 2000,
-      begin: function (anim) {
+      begin: function(anim) {
         document.querySelector("path").setAttribute("stroke", "black");
       },
-      complete: function (anim) {},
+      complete: function(anim) {},
       autoplay: false,
     });
     curtains_settings.initCurtains();
@@ -227,4 +261,3 @@ export default {
   }
 }
 </style>
-

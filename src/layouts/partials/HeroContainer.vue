@@ -3,7 +3,7 @@
     <g-image
       v-if="bg"
       :src="setImage"
-      class="w-full h-screen object-cover absolute z-10 top-0 hero-image opacity-25"
+      class="w-full h-screen object-cover absolute z-10 top-0 hero-image opacity-80"
       alt="cell"
     />
     <div
@@ -27,7 +27,7 @@ export default {
     },
   },
   computed: {
-    setImage: function () {
+    setImage: function() {
       return require("@/assets/img/" + this.bg);
     },
   },
