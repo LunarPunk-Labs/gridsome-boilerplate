@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-primary-500 py-4 mt-5 text-white text-sm">
+  <footer class="bg-black-900 py-4 text-black text-sm fixed w-full bottom-0 z-50">
     <!---<div class="container mx-auto flex flex-col lg:flex-row items-center">
       <thank-you />
     </div>
@@ -7,11 +7,11 @@
     <div
       class="container mx-auto flex flex-col lg:flex-row items-center justify-between"
     >
-      <div class="mb-8 lg:mb-0">
-        <div>Thank you - {{ new Date().getFullYear() }}</div>
+      <div class="mb-8 lg:mb-0 text-white">
+        <!-- <div>{{ new Date().getFullYear() }}</div> -->
       </div>
       <ul class="flex items-center space-x-8">
-        <li>
+        <!-- <li>
           <g-link
             to="https://www.youtube.com/channel/UCD3nTmq-AC1H7T5J7cRwoVA/featured"
             class="text-white hover:text-gray-400"
@@ -49,12 +49,13 @@
               />
             </svg>
           </g-link>
-        </li>
-        <li>
+        </li>-->
+        <li class="flex text-white"> We are still hatching this 🥚, come back in a bit or say hi @
+          
           <g-link
-            to="https://twitter.com/hackalongio"
-            class="text-white hover:text-gray-400"
-          >
+            to="https://twitter.com/LunarPunk_labs"
+            class="text-white hover:text-primary-400 ml-2"
+          > 
             <span class="sr-only">Twitter</span>
             <svg
               width="20"

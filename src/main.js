@@ -7,6 +7,7 @@ import VueYouTubeEmbed from 'vue-youtube-embed'
 
 import DefaultLayout from '~/layouts/Default.vue'
 import HeroLayout from '~/layouts/Hero.vue'
+import SplashLayout from '~/layouts/Splash.vue'
 import NavBar from '~/layouts/partials/NavBar.vue'
 import Footer from '~/layouts/partials/Footer.vue'
 import HeroContainer from '~/layouts/partials/HeroContainer.vue'
@@ -34,6 +35,7 @@ export default function (Vue, {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('LayoutHero', HeroLayout)
+  Vue.component('LayoutSplash', SplashLayout)
 
 
 

@@ -16,7 +16,7 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
-  siteName: 'LunarPunk Labs',
+  siteName: 'Lunarpunk Labs',
   siteDescription: "Lorem ipsum",
   siteUrl: "http://lunarpunklabs.org",
   metadata: {
